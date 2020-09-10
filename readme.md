@@ -111,9 +111,9 @@
   # package the project
   mvn package
   # enter tomcat
-cd /usr/local/tomcat/tomcat/apache-tomcat-8.5.55/webapps
+  cd /usr/local/tomcat/tomcat/apache-tomcat-8.5.55/webapps
   # copy the project's package to tomcat
-cp /root/webapp/blog/blog_data/target/blog_data-*version*.war ./
+  cp /root/webapp/blog/blog_data/target/blog_data-*version*.war ./
   ```
   
   
