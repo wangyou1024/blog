@@ -1,0 +1,73 @@
+.content7-wrapper {
+    min-height: 720px;
+}
+.content7-wrapper .content7 > h1,
+.content7-wrapper .content7 > p {
+    text-align: center;
+}
+.content7-wrapper .content7-tag i {
+    width: 12px;
+    height: 14px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.content7-wrapper .content7-tag-name {
+    display: inline-block;
+}
+.content7-wrapper .content7 .ant-tabs-bar {
+    text-align: center;
+}
+.content7-wrapper .content7 .ant-tabs .ant-tabs-nav {
+    float: none;
+    text-align: center;
+}
+
+/*self*/
+#Feature5_0 > div > div:nth-child(2) > div > div > div.ant-tabs-nav > div.ant-tabs-nav-wrap{
+    display: flex;
+    justify-content: center;
+}
+.content7-wrapper .content7-tabs-wrapper {
+    position: relative;
+    margin-top: 24px;
+}
+.content7-wrapper .content7-content {
+    display: flex;
+    align-items: center;
+}
+.content7-wrapper .content7-text {
+    padding: 24px 48px;
+}
+.content7-wrapper .content7-img {
+    padding: 24px 48px;
+}
+.content7-wrapper .content7 .ant-tabs-tabpane {
+    margin-top: 40px;
+}
+@media screen and (max-width: 767px) {
+    .content7-wrapper {
+        min-height: 980px;
+        overflow: hidden;
+    }
+    .content7-wrapper .content7 {
+        max-width: 100%;
+    }
+    .content7-wrapper .content7-content {
+        display: block;
+    }
+    .content7-wrapper .content7-text,
+    .content7-wrapper .content7-img {
+        text-align: left;
+        padding: 0;
+    }
+    .content7-wrapper .content7-img {
+        margin-top: 32px;
+    }
+    .content7-wrapper .content7 .ant-tabs-bar {
+        width: auto;
+    }
+    .content7-wrapper .content7 .ant-tabs-bar .ant-tabs-nav {
+        float: left;
+    }
+}

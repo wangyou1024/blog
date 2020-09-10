@@ -1,0 +1,63 @@
+.teams0-wrapper {
+  height: 430px;
+}
+.teams0-wrapper .teams0 {
+  padding: 64px 24px;
+  display: flex;
+  align-items: flex-end;
+}
+.teams0-wrapper .teams0 .banner-anim {
+  width: 100%;
+  height: 100%;
+}
+.teams0-wrapper .teams0 .banner-anim-thumb span {
+  background: #e9e9e9;
+  box-shadow: none;
+}
+.teams0-wrapper .teams0 .banner-anim-thumb span.active {
+  background: #1890ff;
+}
+.teams0-wrapper .teams0 .queue-anim-leaving {
+  position: relative !important;
+}
+.teams0-wrapper .teams0-banner-user-elem {
+  height: 100%;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+.teams0-wrapper .teams0-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  overflow: hidden;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.teams0-wrapper .teams0-image img {
+  height: 100%;
+}
+.teams0-wrapper .teams0-content {
+  font-size: 12px;
+  color: #919191;
+  text-align: center;
+  width: 80%;
+  margin: 8px auto;
+}
+.teams0-wrapper .teams0-h1 {
+  font-size: 24px;
+  text-align: center;
+  width: 80%;
+  margin: 24px auto 0;
+}
+@media screen and (max-width: 767px) {
+  .teams0-wrapper {
+    min-height: 480px;
+  }
+  .teams0-wrapper .teams0 {
+    display: block;
+  }
+}

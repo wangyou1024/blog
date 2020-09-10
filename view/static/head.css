@@ -1,0 +1,11 @@
+.ant-menu-horizontal{
+    border-bottom: 0px !important;
+}
+
+.action{
+    font-weight: 700;
+}
+.action:hover{
+    color: #1890ff;
+    cursor: default;
+}

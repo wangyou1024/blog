@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wangyou.blog_data.dao.ArticleDao">
+    <select id="findArticleList" resultType="Article">
+        select
+        aid               as aId,
+        title,
+        view,
+        message,
+        article_date      as articleDate,
+        article_image     as articleImage,
+        article_introduce as articleIntroduce
+        from article
+        where title like concat('%',#{keys},'%')
+        order by article_date desc
+        limit #{index},#{length}
+    </select>
+    <select id="findDetail" resultType="Article" parameterType="String">
+        select detail from article where aid=#{aId}
+    </select>
+    <update id="addView" parameterType="String">
+        update article set view=(view+1) where aid=#{aId}
+    </update>
+    <update id="addMessage" parameterType="String">
+        update article set message=(message+1) where aid=#{aId}
+    </update>
+</mapper>

@@ -1,0 +1,20 @@
+.grayColor{
+    color: rgba(0,0,0,.45);
+}
+.blueColor{
+    color: #1890ff;
+    cursor: default;
+}
+.comment{
+
+}
+
+.comment-button{
+    padding-left: 5px;
+    cursor: default;
+    display: none;
+}
+
+.comment:hover .comment-button{
+    display: block;
+}

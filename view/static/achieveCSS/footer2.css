@@ -1,0 +1,56 @@
+.footer2-wrapper {
+  background-color: #0d1a26;
+  height: 80px;
+  overflow: hidden;
+}
+.footer2-wrapper .footer2 {
+  height: 100%;
+  padding: 0 24px;
+  line-height: 80px;
+  text-align: center;
+  color: #999;
+  position: relative;
+}
+.footer2-wrapper .copyright {
+  float: right;
+}
+.footer2-wrapper .copyright > * {
+  display: inline-block;
+}
+.footer2-wrapper .copyright-logo {
+  width: 16px;
+  margin-right: 8px;
+}
+.footer2-wrapper .copyright-logo img {
+  width: 100%;
+}
+.footer2-wrapper .copyright-line {
+  padding: 0 12px;
+  margin: 0 12px;
+}
+.footer2-wrapper .links {
+  float: left;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.footer2-wrapper .links a {
+  height: 21px;
+  display: inline-block;
+  margin-right: 32px;
+}
+.footer2-wrapper .links a img {
+  display: block;
+}
+@media screen and (max-width: 767px) {
+  .footer2-wrapper .footer2 {
+    font-size: 12px;
+  }
+  .footer2-wrapper .footer2.home-page {
+    padding: 0;
+  }
+  .footer2-wrapper .footer2 > div {
+    width: 90%;
+    margin: auto;
+  }
+}

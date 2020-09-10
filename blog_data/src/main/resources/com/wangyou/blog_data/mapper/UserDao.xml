@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wangyou.blog_data.dao.UserDao">
+
+    <insert id="save" parameterType="User"  keyProperty="uid">
+        insert into user (uid,email,password,role,salt) values(#{uId},#{email},#{password},"normal",#{salt})
+    </insert>
+
+    <select id="findByEmail" parameterType="String" resultType="User">
+        select
+        uid as uId, uname as uName,email,password,sex,salt,role,head_image as headImage,user_introduce as userIntroduce
+        from user
+        where email = #{email}
+    </select>
+
+    <select id="findSaltByEmail" parameterType="String" resultType="String">
+        select salt from user where email=#{email}
+    </select>
+
+    <update id="updatePassword" parameterType="String">
+        update user set password=#{password} where email=#{email}
+    </update>
+
+    <update id="updateImage" parameterType="String">
+        update user set head_image=#{image} where email=#{email}
+    </update>
+
+    <update id="updateInfo" parameterType="User">
+        update user set uname=#{uName},sex=#{sex},user_introduce=#{userIntroduce} where email=#{email}
+    </update>
+
+    <select id="findById" parameterType="String" resultType="User">
+        select
+        uid as uId, uname as uName,email,password,sex,salt,role,head_image as headImage,user_introduce as userIntroduce
+        from user
+        where uid=#{id}
+    </select>
+</mapper>
