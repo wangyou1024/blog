@@ -94,7 +94,7 @@
   spring.mail.port=465
   spring.mail.username=your email
   # When you open qq email server, you can get the password. You can not use the password to sign up.
-  spring.mail.password=chqojzwmnbxmdchf
+  spring.mail.password=**********
   spring.mail.protocol=smtps
   spring.mail.properties.mail.debug=true
   spring.mail.properties.smtp.auth=true
